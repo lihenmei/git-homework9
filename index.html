@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>作业12</title>
+	</head>
+	<style>
+		div{
+			background-color: red;
+		}
+	</style>
+	<body>
+		<input type="text" id="t1" /><br /> <button onclick="a()">复制</button> <input type="text" id="t2" /><br />
+		<div style="display: none" id="t3">复制成功</div>
+		<script type="text/javascript">
+			function a() {
+				document.getElementById("t2").value = document.getElementById("t1").value;
+				document.getElementById("t3").style.display = '';
+			}
+		</script>
+	</body>
+</html>
